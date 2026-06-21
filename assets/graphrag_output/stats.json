@@ -1,0 +1,38 @@
+{
+    "total_runtime": 7631.2583684921265,
+    "num_documents": 1,
+    "update_documents": 0,
+    "input_load_time": 0,
+    "workflows": {
+        "load_input_documents": {
+            "overall": 0.030580520629882812
+        },
+        "create_base_text_units": {
+            "overall": 0.3500032424926758
+        },
+        "create_final_documents": {
+            "overall": 0.2016749382019043
+        },
+        "extract_graph": {
+            "overall": 4141.689737796783
+        },
+        "finalize_graph": {
+            "overall": 0.2446439266204834
+        },
+        "extract_covariates": {
+            "overall": 0.0001957416534423828
+        },
+        "create_communities": {
+            "overall": 0.8338470458984375
+        },
+        "create_final_text_units": {
+            "overall": 0.15523552894592285
+        },
+        "create_community_reports": {
+            "overall": 3411.5023798942566
+        },
+        "generate_text_embeddings": {
+            "overall": 76.24868106842041
+        }
+    }
+}

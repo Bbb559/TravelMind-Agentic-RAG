@@ -1,0 +1,12 @@
+# Optional asset extraction/rebuild toolchain. Not required to run the demo.
+olmocr[gpu]
+unstructured==0.18.24
+unstructured_inference<1.1.0
+pymupdf
+html2text
+pi_heif
+pdf2image
+pytesseract
+langchain_unstructured
+matplotlib>=3.8.4,<4
+opencv-python<4.12

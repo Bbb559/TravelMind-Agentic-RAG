@@ -1,0 +1,40 @@
+# Secrets and machine-local environment
+.env
+.env.*
+!.env.example
+frontend/.env*
+!frontend/.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+.npm-cache/
+
+# Runtime output and paid-call diagnostics
+.runtime/
+run_logs/
+*.log
+*paid*output*
+
+# Tool and editor state
+.idea/
+.vscode/
+.agents/
+.downloads/
+.cache/
+.DS_Store
+Thumbs.db
+
+# Asset-generation caches only; formal GraphRAG parquet/LanceDB assets remain tracked.
+assets/**/cache/
+assets/**/logs/

@@ -1,0 +1,31 @@
+models:
+  default_chat_model:
+    type: chat
+    model_provider: dashscope
+    auth_type: api_key
+    api_key: ${TRAVELMIND_GRAPHRAG_LLM_API_KEY}
+    model: ${TRAVELMIND_GRAPHRAG_LLM_CHAT_MODEL}
+    api_base: ${TRAVELMIND_GRAPHRAG_LLM_BASE_URL}
+    model_supports_json: true
+    tokens_per_minute: null
+    requests_per_minute: null
+  default_embedding_model:
+    type: embedding
+    model_provider: dashscope
+    auth_type: api_key
+    api_key: ${TRAVELMIND_GRAPHRAG_LLM_API_KEY}
+    model: ${TRAVELMIND_GRAPHRAG_LLM_EMBEDDING_MODEL}
+    api_base: ${TRAVELMIND_GRAPHRAG_LLM_BASE_URL}
+    tokens_per_minute: null
+    requests_per_minute: null
+
+output:
+  type: file
+  base_dir: ../graphrag_output
+
+reporting:
+  type: file
+  base_dir: ../../.runtime/graphrag_logs
+
+global_search:
+  chat_model_id: default_chat_model
