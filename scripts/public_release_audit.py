@@ -1,4 +1,4 @@
-"""Validate that a candidate public tree is safe to publish."""
+"""验证候选公开目录是否可以安全发布。"""
 
 from __future__ import annotations
 

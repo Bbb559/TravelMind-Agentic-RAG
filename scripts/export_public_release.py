@@ -1,4 +1,4 @@
-"""Export the verified public file allowlist into a clean directory."""
+"""将通过验证的公开文件白名单导出到干净目录。"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 try:
     from scripts.public_release_audit import publishable_paths
-except ImportError:  # Direct script execution.
+except ImportError:  # 支持直接执行脚本。
     from public_release_audit import publishable_paths
 
 

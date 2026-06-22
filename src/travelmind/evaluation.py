@@ -1,4 +1,4 @@
-"""Reproducible evaluation helpers for the public TravelMind benchmark."""
+"""公开 TravelMind 基准的可复现评测辅助函数。"""
 
 from __future__ import annotations
 

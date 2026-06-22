@@ -1,7 +1,7 @@
-"""Run the versioned TravelMind quality benchmark.
+"""运行版本化的 TravelMind 质量评测。
 
-The offline suite always disables remote LLM, embedding, Official Local, and
-Global Search calls. Paid Official Local evaluation requires an explicit flag.
+离线套件始终禁用远程 LLM、嵌入模型、Official Local 和 Global Search 调用。
+付费 Official Local 评测必须提供显式授权参数。
 """
 
 from __future__ import annotations

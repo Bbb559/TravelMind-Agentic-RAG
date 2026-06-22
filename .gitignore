@@ -1,18 +1,18 @@
-# Secrets and machine-local environment
+# 密钥与本机环境文件
 .env
 .env.*
 !.env.example
 frontend/.env*
 !frontend/.env.example
 
-# Python
+# Python 运行环境与缓存
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 
-# Frontend
+# 前端依赖与构建产物
 node_modules/
 frontend/node_modules/
 frontend/dist/
@@ -20,13 +20,13 @@ dist/
 build/
 .npm-cache/
 
-# Runtime output and paid-call diagnostics
+# 运行输出与付费调用诊断
 .runtime/
 run_logs/
 *.log
 *paid*output*
 
-# Tool and editor state
+# 工具与编辑器状态
 .idea/
 .vscode/
 .agents/
@@ -35,6 +35,6 @@ run_logs/
 .DS_Store
 Thumbs.db
 
-# Asset-generation caches only; formal GraphRAG parquet/LanceDB assets remain tracked.
+# 仅忽略资产生成缓存；正式 GraphRAG Parquet/LanceDB 资产继续纳入版本管理。
 assets/**/cache/
 assets/**/logs/
