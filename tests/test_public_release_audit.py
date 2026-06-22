@@ -129,6 +129,7 @@ class PublicReleaseAuditTests(unittest.TestCase):
             included = [
                 root / ".env.example",
                 root / "README.md",
+                root / "evals" / "v1" / "route_cases.jsonl",
                 root / "src" / "travelmind" / "api.py",
                 root / "tests" / "test_api.py",
                 root / "scripts" / "smoke.py",
@@ -161,13 +162,17 @@ class PublicReleaseAuditTests(unittest.TestCase):
             code = source / "src" / "travelmind" / "api.py"
             code.parent.mkdir(parents=True)
             code.write_text("app = object()", encoding="utf-8")
+            evaluation = source / "evals" / "v1" / "route_cases.jsonl"
+            evaluation.parent.mkdir(parents=True)
+            evaluation.write_text("{}\n", encoding="utf-8")
 
             result = export_public_tree(source, target)
 
-        self.assertEqual(result.file_count, 2)
+        self.assertEqual(result.file_count, 3)
         self.assertTrue(result.verified)
         self.assertIn("README.md", result.paths)
         self.assertIn("src/travelmind/api.py", result.paths)
+        self.assertIn("evals/v1/route_cases.jsonl", result.paths)
         self.assertNotIn(".env", result.paths)
 
     def test_export_public_tree_refuses_a_nonempty_target(self):

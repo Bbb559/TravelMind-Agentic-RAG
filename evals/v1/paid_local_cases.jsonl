@@ -1,0 +1,6 @@
+{"id":"paid-local-01","query":"杭州和苏州哪个更适合江南园林主题游？","expected_route":"graphrag","expected_entities":["杭州","苏州"]}
+{"id":"paid-local-02","query":"北京与西安的历史文化旅行各有什么侧重点？","expected_route":"graphrag","expected_entities":["北京","西安"]}
+{"id":"paid-local-03","query":"成都、丽江和香格里拉怎样串成一条西南路线？","expected_route":"graphrag","expected_entities":["成都","丽江","香格里拉"]}
+{"id":"paid-local-04","query":"桂林与黄果树哪个更适合瀑布山水摄影？","expected_route":"graphrag","expected_entities":["桂林","黄果树"]}
+{"id":"paid-local-05","query":"南京和平遥的人文古城体验有什么差异？","expected_route":"graphrag","expected_entities":["南京","平遥"]}
+{"id":"paid-local-06","query":"大理、张家界和凤凰可以怎样串联成一条旅行路线？","expected_route":"graphrag","expected_entities":["大理","张家界","凤凰"]}

@@ -24,6 +24,7 @@ TEXT_SUFFIXES = {
     ".html",
     ".js",
     ".json",
+    ".jsonl",
     ".md",
     ".mjs",
     ".py",
@@ -75,6 +76,7 @@ PUBLIC_TOP_LEVEL_FILES = {
 PUBLIC_TOP_LEVEL_DIRS = {
     "assets",
     "docs",
+    "evals",
     "frontend",
     "scripts",
     "src",

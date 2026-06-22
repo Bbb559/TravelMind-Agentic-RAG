@@ -1,0 +1,3789 @@
+{
+  "suite": "offline",
+  "benchmark_version": "v1",
+  "generated_at": "2026-06-22T04:44:57+00:00",
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64",
+    "mode": "offline_no_remote_credentials",
+    "repeats_per_case": 3,
+    "single_threaded": true
+  },
+  "route_metrics": {
+    "sample_count": 60,
+    "accuracy": 0.9833333333333333,
+    "macro_f1": 0.9858517260894172,
+    "per_route": {
+      "naive_rag": {
+        "support": 15,
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871
+      },
+      "graphrag": {
+        "support": 10,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526316
+      },
+      "multimodal_rag": {
+        "support": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "hybrid_rag": {
+        "support": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "invalid_input": {
+        "support": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fallback": {
+        "support": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "workflow_metrics": {
+    "sample_count": 40,
+    "answerable_count": 20,
+    "unanswerable_count": 20,
+    "evidence_hit_at_3": 0.95,
+    "safe_refusal_rate": 0.9,
+    "unsafe_generation_rate": 0.1,
+    "cases": [
+      {
+        "id": "workflow-answerable-01",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-02",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-03",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-04",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-05",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-06",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-07",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-08",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-09",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-10",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-11",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-12",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-13",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-14",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-15",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-16",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-17",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-18",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-19",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": "hybrid_partial_fallback",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-answerable-20",
+        "answerable": true,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": false,
+        "fallback_reason": "hybrid_partial_fallback",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-01",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-02",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-03",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-04",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-05",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-06",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "no_relevant_evidence",
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-07",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-08",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-09",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-10",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-11",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-12",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "official_local_failed",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-13",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": true,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-14",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": true,
+        "safe_refusal": false,
+        "unsafe_generation": true,
+        "fallback_reason": null,
+        "generation_mode": "template"
+      },
+      {
+        "id": "workflow-refusal-15",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "unsupported_query",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-16",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "unsupported_query",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-17",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "unsupported_query",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-18",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "unsupported_query",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-19",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "invalid_input",
+        "generation_mode": "none"
+      },
+      {
+        "id": "workflow-refusal-20",
+        "answerable": false,
+        "route_correct": true,
+        "evidence_hit_at_3": false,
+        "safe_refusal": true,
+        "unsafe_generation": false,
+        "fallback_reason": "invalid_input",
+        "generation_mode": "none"
+      }
+    ]
+  },
+  "latency_ms": {
+    "overall": {
+      "count": 300,
+      "p50": 2.378749999934371,
+      "p95": 730.9642050005095
+    },
+    "route_api": {
+      "count": 180,
+      "p50": 2.0865499996034487,
+      "p95": 2.8282500003570026
+    },
+    "workflow_api": {
+      "count": 120,
+      "p50": 20.02740000034464,
+      "p95": 798.5408449997067
+    },
+    "by_route": {
+      "fallback": {
+        "count": 12,
+        "p50": 2.0543499999803316,
+        "p95": 2.6342050000948802
+      },
+      "graphrag": {
+        "count": 18,
+        "p50": 769.36354999998,
+        "p95": 865.7273350001559
+      },
+      "hybrid_rag": {
+        "count": 6,
+        "p50": 727.237950000017,
+        "p95": 2036.4290500001516
+      },
+      "invalid_input": {
+        "count": 6,
+        "p50": 1.99365000025864,
+        "p95": 2.1699250003166526
+      },
+      "multimodal_rag": {
+        "count": 30,
+        "p50": 10.059799999908137,
+        "p95": 11.645449999514312
+      },
+      "naive_rag": {
+        "count": 48,
+        "p50": 21.61195000007865,
+        "p95": 38.8021399999161
+      }
+    },
+    "by_agent": {
+      "GraphRAGAgent": {
+        "count": 18,
+        "p50": 769.36354999998,
+        "p95": 865.7273350001559
+      },
+      "HybridAggregator": {
+        "count": 6,
+        "p50": 727.237950000017,
+        "p95": 2036.4290500001516
+      },
+      "MultimodalTravelAgent": {
+        "count": 30,
+        "p50": 10.059799999908137,
+        "p95": 11.645449999514312
+      },
+      "NaiveTravelAgent": {
+        "count": 48,
+        "p50": 21.61195000007865,
+        "p95": 38.8021399999161
+      },
+      "no_agent": {
+        "count": 18,
+        "p50": 2.0413499992173456,
+        "p95": 2.5751350002337854
+      }
+    }
+  },
+  "paid_search_calls": 0,
+  "route_cases": [
+    {
+      "id": "route-naive-01",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.630299999509589,
+        "p95": 3.235910000057629
+      }
+    },
+    {
+      "id": "route-naive-02",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.8538999995362246,
+        "p95": 2.8748700004143757
+      }
+    },
+    {
+      "id": "route-naive-03",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1981999998388346,
+        "p95": 3.814329999840993
+      }
+    },
+    {
+      "id": "route-naive-04",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.6882000001933193,
+        "p95": 2.8796300000067276
+      }
+    },
+    {
+      "id": "route-naive-05",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.359400000386813,
+        "p95": 2.8594400000656606
+      }
+    },
+    {
+      "id": "route-naive-06",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.284199999849079,
+        "p95": 2.366549999896961
+      }
+    },
+    {
+      "id": "route-naive-07",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.5971000004574307,
+        "p95": 2.7908700000807585
+      }
+    },
+    {
+      "id": "route-naive-08",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.2424999997383566,
+        "p95": 2.5729799999680836
+      }
+    },
+    {
+      "id": "route-naive-09",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.3493999997299397,
+        "p95": 2.7454900002339855
+      }
+    },
+    {
+      "id": "route-naive-10",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.94160000046395,
+        "p95": 2.695890000268264
+      }
+    },
+    {
+      "id": "route-naive-11",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1965999994790764,
+        "p95": 2.5500299992927467
+      }
+    },
+    {
+      "id": "route-naive-12",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.249400000437163,
+        "p95": 2.8604099995391152
+      }
+    },
+    {
+      "id": "route-naive-13",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0855999991908902,
+        "p95": 2.2192500002347515
+      }
+    },
+    {
+      "id": "route-naive-14",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.135400000042864,
+        "p95": 2.5069200000871206
+      }
+    },
+    {
+      "id": "route-naive-15",
+      "expected_route": "naive_rag",
+      "actual_route": "naive_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9076999997196253,
+        "p95": 2.7290400001220405
+      }
+    },
+    {
+      "id": "route-graph-01",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.4215000003096065,
+        "p95": 2.650010000070324
+      }
+    },
+    {
+      "id": "route-graph-02",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1079999996800325,
+        "p95": 2.158490000238089
+      }
+    },
+    {
+      "id": "route-graph-03",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.6388999995106133,
+        "p95": 2.672290000009525
+      }
+    },
+    {
+      "id": "route-graph-04",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9642999995994614,
+        "p95": 2.2368199996890326
+      }
+    },
+    {
+      "id": "route-graph-05",
+      "expected_route": "graphrag",
+      "actual_route": "naive_rag",
+      "correct": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.510000000052969,
+        "p95": 2.528080000593036
+      }
+    },
+    {
+      "id": "route-graph-06",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0408999998835498,
+        "p95": 2.5079100001676125
+      }
+    },
+    {
+      "id": "route-graph-07",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1150000002307934,
+        "p95": 2.1726000000853674
+      }
+    },
+    {
+      "id": "route-graph-08",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1932999998171,
+        "p95": 2.930489999562269
+      }
+    },
+    {
+      "id": "route-graph-09",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8019999997704872,
+        "p95": 2.5618700003178674
+      }
+    },
+    {
+      "id": "route-graph-10",
+      "expected_route": "graphrag",
+      "actual_route": "graphrag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0160999993095174,
+        "p95": 2.188090000072407
+      }
+    },
+    {
+      "id": "route-multimodal-01",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9343000003573252,
+        "p95": 2.5611500005652488
+      }
+    },
+    {
+      "id": "route-multimodal-02",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.830100000006496,
+        "p95": 2.3210500000459433
+      }
+    },
+    {
+      "id": "route-multimodal-03",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1532000000661355,
+        "p95": 2.683299999443989
+      }
+    },
+    {
+      "id": "route-multimodal-04",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.182800000809948,
+        "p95": 2.20359000031749
+      }
+    },
+    {
+      "id": "route-multimodal-05",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9793000001300243,
+        "p95": 2.406260000770999
+      }
+    },
+    {
+      "id": "route-multimodal-06",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1174000003156834,
+        "p95": 2.355360000001383
+      }
+    },
+    {
+      "id": "route-multimodal-07",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.754899999468762,
+        "p95": 2.5295299994468223
+      }
+    },
+    {
+      "id": "route-multimodal-08",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.3530000007667695,
+        "p95": 2.488720000383182
+      }
+    },
+    {
+      "id": "route-multimodal-09",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0431000002645305,
+        "p95": 2.3397399998430046
+      }
+    },
+    {
+      "id": "route-multimodal-10",
+      "expected_route": "multimodal_rag",
+      "actual_route": "multimodal_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.236299999822222,
+        "p95": 2.283459999580373
+      }
+    },
+    {
+      "id": "route-hybrid-01",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.4350000003323657,
+        "p95": 2.6670199998079624
+      }
+    },
+    {
+      "id": "route-hybrid-02",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.6044000003603287,
+        "p95": 2.371290000337467
+      }
+    },
+    {
+      "id": "route-hybrid-03",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9093999999313382,
+        "p95": 2.189480000288313
+      }
+    },
+    {
+      "id": "route-hybrid-04",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9640000000435975,
+        "p95": 2.075150000018766
+      }
+    },
+    {
+      "id": "route-hybrid-05",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9755999992412399,
+        "p95": 2.8964799996174406
+      }
+    },
+    {
+      "id": "route-hybrid-06",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0051000001330976,
+        "p95": 2.32073000024684
+      }
+    },
+    {
+      "id": "route-hybrid-07",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.0559000004141126,
+        "p95": 2.064270000300894
+      }
+    },
+    {
+      "id": "route-hybrid-08",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8798000000970205,
+        "p95": 2.732190000369883
+      }
+    },
+    {
+      "id": "route-hybrid-09",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.976499999727821,
+        "p95": 2.201680000325723
+      }
+    },
+    {
+      "id": "route-hybrid-10",
+      "expected_route": "hybrid_rag",
+      "actual_route": "hybrid_rag",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8150000005334732,
+        "p95": 2.72382000075595
+      }
+    },
+    {
+      "id": "route-invalid-01",
+      "expected_route": "invalid_input",
+      "actual_route": "invalid_input",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8162000005759182,
+        "p95": 2.6477099998373888
+      }
+    },
+    {
+      "id": "route-invalid-02",
+      "expected_route": "invalid_input",
+      "actual_route": "invalid_input",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8014999996012193,
+        "p95": 2.0838299999013543
+      }
+    },
+    {
+      "id": "route-invalid-03",
+      "expected_route": "invalid_input",
+      "actual_route": "invalid_input",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.5365999997811741,
+        "p95": 2.3923200000353972
+      }
+    },
+    {
+      "id": "route-invalid-04",
+      "expected_route": "invalid_input",
+      "actual_route": "invalid_input",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.8026999996436643,
+        "p95": 2.0834099998864986
+      }
+    },
+    {
+      "id": "route-invalid-05",
+      "expected_route": "invalid_input",
+      "actual_route": "invalid_input",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.5175999997154577,
+        "p95": 2.3183299995253037
+      }
+    },
+    {
+      "id": "route-fallback-01",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.6807000001790584,
+        "p95": 1.8381099996076955
+      }
+    },
+    {
+      "id": "route-fallback-02",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.54289999975299,
+        "p95": 2.683479999541305
+      }
+    },
+    {
+      "id": "route-fallback-03",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.1231999999145046,
+        "p95": 2.1575799997663125
+      }
+    },
+    {
+      "id": "route-fallback-04",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.855499999692256,
+        "p95": 1.9034699998883298
+      }
+    },
+    {
+      "id": "route-fallback-05",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.846599999225873,
+        "p95": 1.8900699995356263
+      }
+    },
+    {
+      "id": "route-fallback-06",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.705499999843596,
+        "p95": 2.2716899998158624
+      }
+    },
+    {
+      "id": "route-fallback-07",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.752400000441412,
+        "p95": 2.1510100004888955
+      }
+    },
+    {
+      "id": "route-fallback-08",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.7178999996758648,
+        "p95": 2.1832000000358676
+      }
+    },
+    {
+      "id": "route-fallback-09",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.828899999964051,
+        "p95": 2.4618700001155958
+      }
+    },
+    {
+      "id": "route-fallback-10",
+      "expected_route": "fallback",
+      "actual_route": "fallback",
+      "correct": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.7374999997628038,
+        "p95": 2.043050000065705
+      }
+    }
+  ],
+  "workflow_cases": [
+    {
+      "id": "workflow-answerable-01",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 23.690300000453135,
+        "p95": 23.870659999465715
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "荔波小七孔"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "荔波小七孔"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "荔波小七孔"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "荔波小七孔"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-02",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 20.35040000009758,
+        "p95": 21.072559999993246
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "都江堰"
+              ],
+              "matched_intents": [
+                "transport"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "都江堰"
+              ],
+              "matched_intents": [
+                "transport"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "都江堰"
+              ],
+              "matched_intents": [
+                "transport"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "都江堰"
+              ],
+              "matched_intents": [
+                "transport"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-03",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 20.58489999944868,
+        "p95": 21.359440000378527
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "双廊"
+              ],
+              "matched_intents": [
+                "general"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "双廊"
+              ],
+              "matched_intents": [
+                "general"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "双廊"
+              ],
+              "matched_intents": [
+                "general"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "双廊"
+              ],
+              "matched_intents": [
+                "general"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-04",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 21.305600000232516,
+        "p95": 21.563630000491685
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "阳朔"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "阳朔"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "阳朔"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "阳朔"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-05",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 20.06020000044373,
+        "p95": 20.505250000496744
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "丽江"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "丽江"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "丽江"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "丽江"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-06",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 19.902400000319176,
+        "p95": 21.237729999393196
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "香格里拉"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "香格里拉"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "香格里拉"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "香格里拉"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-07",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 17.97790000000532,
+        "p95": 18.693310000071506
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "黄果树"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "黄果树"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "黄果树"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "黄果树"
+              ],
+              "matched_intents": [
+                "itinerary"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-08",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 19.994600000245555,
+        "p95": 21.467899999697693
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "平遥"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "平遥"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "平遥"
+              ],
+              "matched_intents": [
+                "food"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-09",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 22.770600000512786,
+        "p95": 24.393480000344425
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "凤凰"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "凤凰"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "凤凰"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "凤凰"
+              ],
+              "matched_intents": [
+                "accommodation"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-10",
+      "expected_route": "naive_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 20.34319999984291,
+        "p95": 20.838109999749577
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "csv",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "张家界"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "张家界"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "张家界"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "csv",
+              "evidence_valid": true,
+              "evidence_reason": "entity_and_intent_covered",
+              "matched_entities": [
+                "张家界"
+              ],
+              "matched_intents": [
+                "attractions"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-11",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 10.054700000182493,
+        "p95": 10.35503000002791
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-12",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 9.977400000025227,
+        "p95": 11.38013999998293
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-13",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 10.100400000737864,
+        "p95": 10.397849999935715
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-14",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 9.70469999992929,
+        "p95": 10.829520000424964
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-15",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 11.201799999980722,
+        "p95": 12.20268999977634
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-16",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 9.477799999331182,
+        "p95": 9.52711999998428
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "aomen"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-17",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 10.243800000353076,
+        "p95": 10.386450000351033
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-18",
+      "expected_route": "multimodal_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 9.851099999650614,
+        "p95": 10.043519999635464
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-19",
+      "expected_route": "hybrid_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 713.6978999997154,
+        "p95": 2262.9124500002035
+      },
+      "payload": {
+        "route": "hybrid_rag",
+        "fallback_reason": "hybrid_partial_fallback",
+        "execution_status": {
+          "agent": "HybridAggregator",
+          "retrieval_mode": "multi_source_candidate_aggregation",
+          "evidence_status": "partial",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-answerable-20",
+      "expected_route": "hybrid_rag",
+      "answerable": true,
+      "latency_ms": {
+        "count": 3,
+        "p50": 730.9319000005416,
+        "p95": 829.609789999904
+      },
+      "payload": {
+        "route": "hybrid_rag",
+        "fallback_reason": "hybrid_partial_fallback",
+        "execution_status": {
+          "agent": "HybridAggregator",
+          "retrieval_mode": "multi_source_candidate_aggregation",
+          "evidence_status": "partial",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-01",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 34.677499999816064,
+        "p95": 39.216739999938
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-02",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 35.01059999962308,
+        "p95": 35.734200000661076
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-03",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 40.913399999226385,
+        "p95": 41.20752000007997
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-04",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 36.93429999930231,
+        "p95": 37.07937999979549
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-05",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 32.61279999969702,
+        "p95": 32.86434999972698
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-06",
+      "expected_route": "naive_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 35.140299999511626,
+        "p95": 35.82763000022169
+      },
+      "payload": {
+        "route": "naive_rag",
+        "fallback_reason": "no_relevant_evidence",
+        "execution_status": {
+          "agent": "NaiveTravelAgent",
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-07",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 766.6349000000992,
+        "p95": 845.7788300001994
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "上海",
+                "桂林"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-08",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 798.3618999996906,
+        "p95": 807.324549999521
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "北京",
+                "杭州",
+                "苏州"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-09",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 795.7995000006122,
+        "p95": 915.6236999999237
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "成都",
+                "张家界"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-10",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 731.5779999998995,
+        "p95": 789.5927200001097
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "南京",
+                "凤凰"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-11",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 715.1291000000128,
+        "p95": 745.7270299994889
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "丽江",
+                "平遥"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-12",
+      "expected_route": "graphrag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 793.746999999712,
+        "p95": 801.1214199999813
+      },
+      "payload": {
+        "route": "graphrag",
+        "fallback_reason": "official_local_failed",
+        "execution_status": {
+          "agent": "GraphRAGAgent",
+          "retrieval_mode": "graphrag_local_evidence",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "graphrag_local_evidence",
+              "matched_entities": [
+                "黄果树",
+                "桂林",
+                "阳朔"
+              ],
+              "entity_coverage": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-13",
+      "expected_route": "multimodal_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 10.773300000437303,
+        "p95": 11.638829999264999
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "xianggang"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-14",
+      "expected_route": "multimodal_rag",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 10.240800000246963,
+        "p95": 10.577849999754108
+      },
+      "payload": {
+        "route": "multimodal_rag",
+        "fallback_reason": null,
+        "execution_status": {
+          "agent": "MultimodalTravelAgent",
+          "retrieval_mode": "markdown_keyword",
+          "evidence_status": "sufficient",
+          "generation_mode": "template",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": [
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          },
+          {
+            "metadata": {
+              "retrieval_mode": "markdown_keyword",
+              "evidence_valid": true,
+              "evidence_reason": "region_and_topic_covered",
+              "matched_entities": [
+                "taiwan"
+              ],
+              "matched_intents": [
+                "multimodal_topic"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow-refusal-15",
+      "expected_route": "fallback",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.048099999228725,
+        "p95": 2.6730599997790705
+      },
+      "payload": {
+        "route": "fallback",
+        "fallback_reason": "unsupported_query",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-16",
+      "expected_route": "fallback",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.3042999991957913,
+        "p95": 2.3970900001586415
+      },
+      "payload": {
+        "route": "fallback",
+        "fallback_reason": "unsupported_query",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-17",
+      "expected_route": "fallback",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.060600000731938,
+        "p95": 2.4971000003461086
+      },
+      "payload": {
+        "route": "fallback",
+        "fallback_reason": "unsupported_query",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-18",
+      "expected_route": "fallback",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.9427000006544404,
+        "p95": 2.180210000187799
+      },
+      "payload": {
+        "route": "fallback",
+        "fallback_reason": "unsupported_query",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "insufficient",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-19",
+      "expected_route": "invalid_input",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 1.971600000615581,
+        "p95": 2.082930000324268
+      },
+      "payload": {
+        "route": "invalid_input",
+        "fallback_reason": "invalid_input",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "not_run",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    },
+    {
+      "id": "workflow-refusal-20",
+      "expected_route": "invalid_input",
+      "answerable": false,
+      "latency_ms": {
+        "count": 3,
+        "p50": 2.015699999901699,
+        "p95": 2.176890000282583
+      },
+      "payload": {
+        "route": "invalid_input",
+        "fallback_reason": "invalid_input",
+        "execution_status": {
+          "agent": null,
+          "retrieval_mode": "none",
+          "evidence_status": "not_run",
+          "generation_mode": "none",
+          "llm_stages": {
+            "router": "disabled",
+            "grade": "disabled",
+            "rewrite": "disabled",
+            "generate": "disabled"
+          }
+        },
+        "global_search_status": {
+          "requested": false,
+          "service_enabled": false,
+          "effective_allowed": false,
+          "executed": false,
+          "succeeded": false
+        },
+        "retrieved": []
+      }
+    }
+  ]
+}

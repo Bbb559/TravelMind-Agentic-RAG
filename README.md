@@ -118,6 +118,24 @@ npm.cmd run dev
 | 阳朔和张家界哪个更适合看山水风景？ | GraphRAGAgent |
 | 香港和成都哪个更适合亲子游？ | HybridAggregator |
 
+## 效果评测
+
+2026-06-22 在冻结的 `v1` 留出集上运行无付费评测，所有远程凭据均被清空，
+GraphRAG Global Search 调用为 0：
+
+| 指标 | 结果 |
+| --- | --- |
+| 路由准确率 | 98.3%（59/60） |
+| 路由 Macro-F1 | 0.986 |
+| Evidence Hit@3 | 95.0%（19/20 个可回答问题） |
+| 安全拒答率 | 90.0%（18/20 个无证据问题） |
+| 无证据误生成率 | 10.0%（2/20） |
+
+这里的 Evidence Hit@3 表示 Top 3 中存在同时覆盖目标实体和意图的有效证据，
+不等同于完整语料召回率。安全拒答与误生成依据固定规则统计；人工回答忠实度模板已经建立，
+但在 30 条人工标注完成前不发布“幻觉率”数字。完整数据、公式、失败案例和复现方式见
+[评测与能力边界](docs/evaluation.md)。
+
 ## 验证
 
 ```powershell
@@ -127,6 +145,16 @@ $env:PYTHONPATH = "src"
 .\.venv\Scripts\python.exe scripts\smoke_full_agentic_rag.py --strict
 npm.cmd --prefix frontend run test:contract
 npm.cmd --prefix frontend run build
+```
+
+运行冻结的无付费效果评测：
+
+```powershell
+.\.venv\Scripts\python.exe scripts\evaluate_agentic_rag.py `
+  --suite offline `
+  --repeats 3 `
+  --output-json evals\results\offline_v1.json `
+  --output-markdown evals\results\offline_v1.md
 ```
 
 HTTP smoke 需要先启动安全后端：
